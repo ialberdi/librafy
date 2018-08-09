@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+
+<xs:element name="biblioteca" type="bibliotecaInfo"/>
+
+
+<xs:complexType name="bibliotecaInfo">
+	<xs:sequence>
+		<xs:element name="discos" type="discosInfo" />
+        <xs:element name="libros" type="librosInfo" />
+        <xs:element name="peliculas" type="peliculasInfo" />
+    </xs:sequence>
+</xs:complexType>
+
+    
+    <!-- ****************** 
+    
+    DEFINICIÓN PARA LOS DISCOS 
+           
+         ****************** -->
+    
+    <!-- Secuencia para el objeto disco -->
+    <xs:complexType name="discosInfo">
+		<xs:sequence>
+        	<xs:element name="disco" type="discoInfo" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+	</xs:complexType>
+    
+    
+    <!-- Elementos principales -->
+    <xs:complexType name="discoInfo">
+    	<xs:sequence>
+    		<xs:element name="nombre" type="gTituloType" />
+			<xs:element name="productores" type="gProductoresInfo" />
+			<xs:element name="editor" type="editorInfo" />
+			<xs:element name="anio" type="gAnioInfo" />
+			<xs:element name="canciones" type="cancionesInfo"/>
+    	</xs:sequence>
+    	<xs:attribute name="id" type="xs:integer" use="required"/>
+    </xs:complexType>
+
+	<!-- Editores -->
+	 <xs:complexType name="editorInfo">
+		<xs:simpleContent>
+			<xs:extension base="editorEnumInfo">
+				<xs:attributeGroup ref="gPersonasAtributosInfo"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+
+	<xs:simpleType name="editorEnumInfo">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Anthony Baletti" />
+			<xs:enumeration value="John Smith" />
+			<xs:enumeration value="Erik Molier" />
+		</xs:restriction>
+	</xs:simpleType>
+
+    
+    <!-- Canciones -->
+    <xs:complexType name="cancionesInfo">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="1"  name="cancion" type="cancionInfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	
+	<xs:complexType name="cancionInfo">
+    	<xs:sequence>
+    		<xs:element name="titulo" type="gTituloType" />
+			<xs:element name="compositores" type="compositoresInfo" />
+			<xs:element name="duracion" type="gDuracionInfo" />
+			<xs:element name="interpretes" type="interpretesInfo" />
+    	</xs:sequence>
+    	<xs:attribute name="id" type="xs:integer" use="required"/>
+    </xs:complexType>
+    
+   	<xs:complexType name="compositoresInfo">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="1"  name="compositor" type="gPersonaInfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="interpretesInfo">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="1"  name="interprete" type="gPersonaInfo"/>
+		</xs:sequence>
+	</xs:complexType>
+    
+
+    <!-- ****************** 
+    
+    FINAL DE LA DEFINICIÓN PARA LOS DISCOS 
+           
+         ****************** -->
+    
+
+    <!-- ****************** 
+    
+    DEFINICIÓN PARA LOS LIBROS 
+           
+         ****************** -->
+    
+    <!-- Secuencia para el objeto disco -->
+    <xs:complexType name="librosInfo">
+		<xs:sequence>
+        	<xs:element name="libro" type="libroInfo" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+	</xs:complexType>
+    
+    
+    <!-- Elementos principales -->
+    <xs:complexType name="libroInfo">
+    	<xs:sequence>
+    		<xs:element name="titulo" type="gTituloType" />
+			<xs:element name="autores" type="autoresInfo" />
+			<xs:element name="lengua" type="lenguaInfo" />
+			<xs:element name="genero" type="generoInfo" />
+			<xs:element name="fecha" type="fechaInfo" />
+			<xs:element name="resena" type="xs:string"  />
+    	</xs:sequence>
+    	<xs:attribute name="id" type="xs:integer" use="required"/>
+    </xs:complexType>
+    
+    <!-- Autores -->
+   	<xs:complexType name="autoresInfo">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="1"  name="autor" type="gPersonaInfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- Lengua -->
+	<xs:simpleType name="lenguaInfo">
+	    <xs:restriction base="xs:string">
+	        <xs:pattern value="[a-z][a-z]-[A-Z][A-Z]"/>
+	    </xs:restriction>
+	</xs:simpleType>
+	
+	<!-- Genero -->
+	<xs:simpleType name="generoInfo">
+    	<xs:restriction base="xs:string">
+    		<xs:enumeration value="Policial" />
+    		<xs:enumeration value="Romántica" />
+    		<xs:enumeration value="Aventura" />
+    		<xs:enumeration value="Terror" />
+    		<xs:enumeration value="Ficción" />
+    		<xs:enumeration value="Ciencia" />
+    		<xs:enumeration value="Biográfica" />
+    		<xs:enumeration value="Infantil" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+   	<!-- Fecha -->
+	<xs:simpleType name="fechaInfo">
+		<xs:restriction base="xs:date">
+			<xs:minInclusive value="1500-01-01"/>
+			<xs:maxInclusive value="2100-12-31"/>
+			<xs:pattern value=".{10}"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+
+
+    <!-- ****************** 
+    
+    FINAL DE LA DEFINICIÓN PARA LOS LIBROS 
+           
+         ****************** -->
+        
+    
+    
+
+     <!-- ****************** 
+    
+    DEFINICIÓN PARA LOS PELÍCULAS 
+           
+         ****************** -->
+    
+    <!-- Secuencia para el objeto libro -->
+    <xs:complexType name="peliculasInfo">
+		<xs:sequence>
+        	<xs:element name="pelicula" type="peliculaInfo" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+	</xs:complexType>
+    
+    
+    <!-- Elementos principales -->
+    <xs:complexType name="peliculaInfo">
+    	<xs:sequence>
+    		<xs:element name="titulo" type="gTituloType" />
+			<xs:element name="duracion" type="gDuracionInfo" />
+			<xs:element name="anio_estreno" type="gAnioInfo" />
+			<xs:element name="directores" type="directoresInfo" />
+			<xs:element name="productores" type="gProductoresInfo" />
+			<xs:element name="actores" type="actoresInfo"/>
+    	</xs:sequence>
+    	<xs:attribute name="id" type="xs:integer" use="required"/>
+    </xs:complexType>
+    
+    <!-- Directores -->
+   	<xs:complexType name="directoresInfo">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="1"  name="director" type="gPersonaInfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- Actores -->
+   	<xs:complexType name="actoresInfo">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="1"  name="actor" type="gPersonaInfo"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+
+
+    <!-- ****************** 
+    
+    FINAL DE LA DEFINICIÓN PARA LOS PELÍCULAS 
+           
+         ****************** --> 
+    
+
+    
+    <!-- ****************** 
+    
+           TIPOS GLOBALES 
+           
+         ****************** -->
+    
+    <!-- titulos y nombres -->
+    <xs:simpleType name="gTituloType">
+    	<xs:restriction base="xs:string">
+    		<xs:minLength value="1" />
+            <xs:maxLength value="80" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- personas con atributos de codigo identificativo y nacionalidad. Ejemplo: autores, productores, etc. -->
+    <xs:complexType name="gPersonaInfo">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attributeGroup ref="gPersonasAtributosInfo"/>
+			</xs:extension>
+		</xs:simpleContent>
+    </xs:complexType>
+    
+    <!-- Atributos de las personas como autores, productores, editores, etc. -->
+    <xs:attributeGroup name="gPersonasAtributosInfo">
+    	<xs:attribute name="codigo" type="gCodigoType" use="required"/>
+		<xs:attribute name="nacionalidad" type="gTituloType" use="required"/>
+    </xs:attributeGroup>
+
+	<xs:simpleType name="gCodigoType">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([0-9]{6})"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+    
+    <!-- Productores para discos y películas -->
+   	<xs:complexType name="gProductoresInfo">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="1"  name="productor" type="gPersonaInfo"/>
+		</xs:sequence>
+	</xs:complexType>
+    
+    <!-- Años -->
+    <xs:simpleType name="gAnioInfo">
+    	<xs:restriction base="xs:integer">
+    		<xs:minInclusive  value="1900" />
+            <xs:maxInclusive   value="3000" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!-- Duración -->
+    <xs:simpleType name="gDuracionInfo">
+    	<xs:restriction base="xs:time">
+    		<xs:minInclusive  value="00:00:01" />
+            <xs:maxInclusive   value="23:59:59" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>

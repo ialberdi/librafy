@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="biblioteca.xsd">
+  <discos>
+    <disco id="1">
+      <nombre>Tubular bells 2</nombre>
+      <productores>
+        <productor codigo="365895" nacionalidad="canadiense">Jennifer McNeal</productor>
+        <productor codigo="458958" nacionalidad="británica">Mike Oldfield</productor>
+      </productores>
+      <editor codigo="596859" nacionalidad="británica">Anthony Baletti</editor>
+      <anio>1997</anio>
+      <canciones>
+        <cancion id="1">
+          <titulo>Sentinel</titulo>
+          <compositores>
+            <compositor codigo="120336" nacionalidad="británica">Mikel Oldfield</compositor>
+            <compositor codigo="748554" nacionalidad="estadounidense">Susanne Smith</compositor>
+          </compositores>
+          <duracion>00:08:06</duracion>
+          <interpretes>
+            <interprete codigo="121220" nacionalidad="británica">Mike Oldfield 1</interprete>
+            <interprete codigo="122220" nacionalidad="británica">Mike Oldfield 2</interprete>
+            <interprete codigo="123220" nacionalidad="británica">Mike Oldfield 3</interprete>
+          </interpretes>
+        </cancion>
+        <cancion id="2">
+          <titulo>Dark Star</titulo>
+          <compositores>
+            <compositor codigo="487584" nacionalidad="británica">Mikel Oldfield</compositor>
+            <compositor codigo="658998" nacionalidad="británica">Mikel Oldfield</compositor>
+            <compositor codigo="325448" nacionalidad="británica">Mikel Oldfield</compositor>
+          </compositores>
+          <duracion>00:02:16</duracion>
+          <interpretes>
+            <interprete codigo="956558" nacionalidad="británica">Mike Oldfield</interprete>
+          </interpretes>
+        </cancion>
+        <cancion id="3">
+          <titulo>Hello World</titulo>
+          <compositores>
+            <compositor codigo="145558" nacionalidad="británica">Mikel Oldfield</compositor>
+          </compositores>
+          <duracion>00:03:28</duracion>
+          <interpretes>
+            <interprete codigo="120003" nacionalidad="británica">Mike Oldfield</interprete>
+          </interpretes>
+        </cancion>
+      </canciones>
+    </disco>
+    <disco id="2">
+      <nombre>Tubular bells 3</nombre>
+      <productores>
+        <productor codigo="965885" nacionalidad="canadiense">Jennifer McNeal</productor>
+        <productor codigo="120332" nacionalidad="británica">Mike Oldfield</productor>
+      </productores>
+      <editor codigo="658998" nacionalidad="británica">Anthony Baletti</editor>
+      <anio>1999</anio>
+      <canciones>
+        <cancion id="1">
+          <titulo>The Source of Secrets</titulo>
+          <compositores>
+            <compositor codigo="959889" nacionalidad="británica">Mikel Oldfield</compositor>
+            <compositor codigo="102114" nacionalidad="estadounidense">Susanne Smith</compositor>
+          </compositores>
+          <duracion>00:01:06</duracion>
+          <interpretes>
+            <interprete codigo="326558" nacionalidad="británica">Mike Oldfield</interprete>
+          </interpretes>
+        </cancion>
+        <cancion id="2">
+          <titulo>The Watchful Eye</titulo>
+          <compositores>
+            <compositor codigo="120114" nacionalidad="británica">Mikel Oldfield</compositor>
+          </compositores>
+          <duracion>00:09:16</duracion>
+          <interpretes>
+            <interprete codigo="120225" nacionalidad="británica">Mike Oldfield</interprete>
+          </interpretes>
+        </cancion>
+      </canciones>
+    </disco>
+    <disco id="3">
+      <nombre>Tubular bells 1</nombre>
+      <productores>
+        <productor codigo="120225" nacionalidad="canadiense">Jennifer McNeal</productor>
+        <productor codigo="120114" nacionalidad="británica">Mike Oldfield</productor>
+      </productores>
+      <editor codigo="252669" nacionalidad="británica">Anthony Baletti</editor>
+      <anio>1997</anio>
+      <canciones>
+        <cancion id="1">
+          <titulo>Sentinel</titulo>
+          <compositores>
+            <compositor codigo="120225" nacionalidad="británica">Mikel Oldfield</compositor>
+            <compositor codigo="895558" nacionalidad="estadounidense">Susanne Smith</compositor>
+          </compositores>
+          <duracion>00:08:06</duracion>
+          <interpretes>
+            <interprete codigo="120225" nacionalidad="británica">Mike Oldfield</interprete>
+          </interpretes>
+        </cancion>
+        <cancion id="2">
+          <titulo>Dark Star</titulo>
+          <compositores>
+            <compositor codigo="565889" nacionalidad="británica">Mikel Oldfield</compositor>
+          </compositores>
+          <duracion>00:02:16</duracion>
+          <interpretes>
+            <interprete codigo="858774" nacionalidad="británica">Mike Oldfield</interprete>
+          </interpretes>
+        </cancion>
+        <cancion id="3">
+          <titulo>Hello World</titulo>
+          <compositores>
+            <compositor codigo="120224" nacionalidad="británica">Mikel Oldfield</compositor>
+          </compositores>
+          <duracion>00:03:28</duracion>
+          <interpretes>
+            <interprete codigo="958457" nacionalidad="británica">Mike Oldfield</interprete>
+          </interpretes>
+        </cancion>
+      </canciones>
+    </disco>
+    <disco id="4">
+      <nombre>Tubular bells 4</nombre>
+      <productores>
+        <productor codigo="958774" nacionalidad="canadiense">Jennifer McNeal</productor>
+        <productor codigo="265885" nacionalidad="británica">Mike Oldfield</productor>
+      </productores>
+      <editor codigo="625369" nacionalidad="británica">Anthony Baletti</editor>
+      <anio>1997</anio>
+      <canciones>
+        <cancion id="1">
+          <titulo>Sentinel</titulo>
+          <compositores>
+            <compositor codigo="958558" nacionalidad="británica">Mikel Oldfield</compositor>
+            <compositor codigo="625998" nacionalidad="estadounidense">Susanne Smith</compositor>
+          </compositores>
+          <duracion>00:08:06</duracion>
+          <interpretes>
+            <interprete codigo="235665" nacionalidad="británica">Mike Oldfield</interprete>
+          </interpretes>
+        </cancion>
+        <cancion id="2">
+          <titulo>Dark Star</titulo>
+          <compositores>
+            <compositor codigo="125447" nacionalidad="británica">Mikel Oldfield</compositor>
+          </compositores>
+          <duracion>00:02:16</duracion>
+          <interpretes>
+            <interprete codigo="859887" nacionalidad="británica">Mike Oldfield</interprete>
+          </interpretes>
+        </cancion>
+        <cancion id="3">
+          <titulo>Hello World</titulo>
+          <compositores>
+            <compositor codigo="125447" nacionalidad="británica">Mikel Oldfield</compositor>
+          </compositores>
+          <duracion>00:03:28</duracion>
+          <interpretes>
+            <interprete codigo="154774" nacionalidad="británica">Mike Oldfield</interprete>
+          </interpretes>
+        </cancion>
+      </canciones>
+    </disco>
+    <disco id="5">
+      <nombre>Tubular bells 5</nombre>
+      <productores>
+        <productor codigo="236558" nacionalidad="Nac1111">Productor1</productor>
+        <productor codigo="254774" nacionalidad="Nac2222">Productor2</productor>
+        <productor codigo="203021" nacionalidad="Nac3333">Productor3</productor>
+      </productores>
+      <editor codigo="365885" nacionalidad="canadiense">Anthony Baletti</editor>
+      <anio>1995</anio>
+      <canciones>
+        <cancion id="1">
+          <titulo>Cancion 1</titulo>
+          <compositores>
+            <compositor codigo="985441" nacionalidad="Cancion1Compositor1Nac1">Cancion1Compositor1</compositor>
+            <compositor codigo="955847" nacionalidad="Cancion1Compositor2Nac2">Cancion1Compositor2</compositor>
+          </compositores>
+          <duracion>00:01:11</duracion>
+          <interpretes>
+            <interprete codigo="325441" nacionalidad="Cancion1Interprete1Nac1">Cancion1Interprete1</interprete>
+          </interpretes>
+        </cancion>
+        <cancion id="2">
+          <titulo>Cancion 2</titulo>
+          <compositores>
+            <compositor codigo="954774" nacionalidad="Cancion2Compositor1Nac1">Cancion2Compositor1</compositor>
+          </compositores>
+          <duracion>00:02:22</duracion>
+          <interpretes>
+            <interprete codigo="326585" nacionalidad="Cancion2Interprete1Nac1">Cancion2Interprete1</interprete>
+          </interpretes>
+        </cancion>
+        <cancion id="3">
+          <titulo>Cancion 3</titulo>
+          <compositores>
+            <compositor codigo="625884" nacionalidad="Cancion3Compositor1Nac1">Cancion3Compositor1</compositor>
+            <compositor codigo="958774" nacionalidad="Cancion3Compositor2Nac1">Cancion3Compositor2</compositor>
+            <compositor codigo="252524" nacionalidad="Cancion3Compositor3Nac1">Cancion3Compositor3</compositor>
+          </compositores>
+          <duracion>00:03:33</duracion>
+          <interpretes>
+            <interprete codigo="658995" nacionalidad="Cancion3Interprete1Nac1">Cancion3Interprete1</interprete>
+          </interpretes>
+        </cancion>
+      </canciones>
+    </disco>
+    <disco id="6">
+      <nombre>Nuevo disco de prueba</nombre>
+      <productores>
+        <productor codigo="989885" nacionalidad="canadiense">Productor</productor>
+      </productores>
+      <editor codigo="232551" nacionalidad="1">John Smith</editor>
+      <anio>2018</anio>
+      <canciones>
+        <cancion id="1">
+          <titulo>Cancion 1</titulo>
+          <compositores>
+            <compositor codigo="365889" nacionalidad="estadounidense">Compositor 1</compositor>
+          </compositores>
+          <duracion>00:30:55</duracion>
+          <interpretes>
+            <interprete codigo="125774" nacionalidad="francés">Interprete 1</interprete>
+          </interpretes>
+        </cancion>
+      </canciones>
+    </disco>
+    <disco id="7">
+      <nombre>Prueba nueva 1234</nombre>
+      <productores>
+        <productor codigo="698558" nacionalidad="aleman">Productor 1</productor>
+      </productores>
+      <editor codigo="125774" nacionalidad="frances">Erik Molier</editor>
+      <anio>2018</anio>
+      <canciones>
+        <cancion id="1">
+          <titulo>Cancion 1</titulo>
+          <compositores>
+            <compositor codigo="366998" nacionalidad="ruso">Compositor 1</compositor>
+          </compositores>
+          <duracion>00:33:05</duracion>
+          <interpretes>
+            <interprete codigo="336658" nacionalidad="cubano">Interprete 1</interprete>
+          </interpretes>
+        </cancion>
+      </canciones>
+    </disco>
+  </discos>
+  <libros>
+    <libro id="1">
+      <titulo>Historia del tiempo</titulo>
+      <autores>
+        <autor codigo="989968" nacionalidad="británica">Stephen W. Hawking</autor>
+        <autor codigo="658554" nacionalidad="sueca">J.K. Rowling</autor>
+      </autores>
+      <lengua>es-ES</lengua>
+      <genero>Ciencia</genero>
+      <fecha>1988-05-12</fecha>
+      <resena><![CDATA[Historia del tiempo es un libro de divulgación sobre el espacio y el tiempo escrito por uno de los físicos teóricos más prestigiosos de la actualidad. En él Stephen W. Hawking presenta de forma clara y concisa los conceptos fundamentales de la mecánica newtoniana, la teoría de la relatividad, la mecánica cuántica y la cosmología contemporánea, temas todos ellos que, junto a su interés intrínseco, permiten enmarcar el problema de fondo tratado en el libro: el origen del universo y la creación del espacio-tiempo, llegando a asomarse a campos más amplios y aventurados, como la metafísica e incluso la teología, al plantearse la naturaleza de un Dios creador, o más bien garante del sentido del universo.]]></resena>
+    </libro>
+    <libro id="2">
+      <titulo>Una columna de fuego</titulo>
+      <autores>
+        <autor codigo="336658" nacionalidad="británica">Ken Follet</autor>
+      </autores>
+      <lengua>en-GB</lengua>
+      <genero>Terror</genero>
+      <fecha>2017-03-25</fecha>
+      <resena><![CDATA[Una columna de fuego arranca cuando el joven Ned Willard regresa a su hogar en Kingsbridge por Navidad. Corre el año 1558, un año que trastocará la vida de Ned y que cambiará Europa para siempre.
+
+Las antiguas piedras de la catedral de Kingsbridge contemplan una ciudad dividida por el odio religioso. Los principios elevados chocan con la amistad, la lealtad y el amor, y provocan derramamientos de sangre. Ned se encuentra de pronto en el bando contrario al de la muchacha con quien anhela casarse, Margery Fitzgerald.
+
+Cuando Isabel I llega al trono, toda Europa se vuelve en contra de Inglaterra. La joven monarca, astuta y decidida, organiza el primer servicio secreto del país para estar avisada ante cualquier indicio de intrigas homicidas, levantamientos o planes de invasión.
+
+En París, a la espera, se encuentra la seductora y obstinada María Estuardo, reina de los escoceses, en el seno de una familia francesa con una ambición descomunal. Proclamada legítima soberana de Inglaterra, María cuenta con sus propios partidarios, que conspiran para deshacerse de Isabel.
+
+Entretanto, Ned Willard busca a Jean Langlais, un personaje escurridizo y enigmático, sin saber que tras ese nombre falso se esconde un compañero de clase de su infancia, alguien que lo conoce demasiado bien.
+
+A lo largo de medio siglo turbulento, el amor entre Ned y Margery parece condenado al fracaso mientras el extremismo hace estallar la violencia desde Edimburgo hasta Ginebra. Isabel se aferra precariamente a su trono y a sus principios, protegida por un pequeño y entregado grupo de espías hábiles y agentes secretos valerosos.
+
+Los auténticos enemigos, tanto entonces como ahora, no son las religiones rivales. La verdadera batalla es la que enfrenta a quienes creen en la tolerancia y el acuerdo contra tiranos dispuestos a imponer sus ideas a todo el mundo... y a cualquier precio.]]></resena>
+    </libro>
+    <libro id="4">
+      <titulo>Nuevo libro de prueba</titulo>
+      <autores>
+        <autor codigo="255848" nacionalidad="frances">James Smith</autor>
+      </autores>
+      <lengua>en-GB</lengua>
+      <genero>Ficción</genero>
+      <fecha>1984-05-01</fecha>
+      <resena><![CDATA[Reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, reseña muy larga, ]]></resena>
+    </libro>
+  </libros>
+  <peliculas>
+    <pelicula id="1">
+      <titulo>The Matrix</titulo>
+      <duracion>02:00:13</duracion>
+      <anio_estreno>1999</anio_estreno>
+      <directores>
+        <director codigo="998554" nacionalidad="estadounidense">Lana Wachowski</director>
+        <director codigo="221441" nacionalidad="estadounidense">Lilly Wachowski</director>
+      </directores>
+      <productores>
+        <productor codigo="114477" nacionalidad="estadounidense">Joel Silver</productor>
+      </productores>
+      <actores>
+        <actor codigo="958665" nacionalidad="canadiense">Keanu Reeves</actor>
+        <actor codigo="254774" nacionalidad="estadounidense">Laurence Fishburne</actor>
+        <actor codigo="214412" nacionalidad="estadounidense">Carrie-Anne Moss</actor>
+        <actor codigo="225599" nacionalidad="estadounidense">Hugo Weaving</actor>
+        <actor codigo="332255" nacionalidad="estadounidense">Joe Pantoliano</actor>
+        <actor codigo="778844" nacionalidad="estadounidense">Gloria Foster</actor>
+        <actor codigo="214525" nacionalidad="estadounidense">Marcus Chong</actor>
+        <actor codigo="958745" nacionalidad="estadounidense">Matt Doran</actor>
+        <actor codigo="365885" nacionalidad="estadounidense">Belinda McClory</actor>
+        <actor codigo="125774" nacionalidad="estadounidense">Julian Arahanga</actor>
+        <actor codigo="958998" nacionalidad="estadounidense">Anthony Ray Parker</actor>
+      </actores>
+    </pelicula>
+    <pelicula id="2">
+      <titulo>Back to the future</titulo>
+      <duracion>01:05:53</duracion>
+      <anio_estreno>1985</anio_estreno>
+      <directores>
+        <director codigo="958774" nacionalidad="estadounidense">Robert Zemeckis</director>
+      </directores>
+      <productores>
+        <productor codigo="125884" nacionalidad="estadounidense">Neil Canton</productor>
+        <productor codigo="269995" nacionalidad="estadounidense">Bob Gale</productor>
+        <productor codigo="251447" nacionalidad="estadounidense">Steven Spielberg</productor>
+        <productor codigo="958778" nacionalidad="estadounidense">Kathleen Kennedy</productor>
+        <productor codigo="325998" nacionalidad="estadounidense">Frank Marshall</productor>
+      </productores>
+      <actores>
+        <actor codigo="255774" nacionalidad="estadounidense">Michael J. Fox</actor>
+        <actor codigo="125854" nacionalidad="estadounidense">Christopher Lloyd</actor>
+        <actor codigo="958874" nacionalidad="estadounidense">Crispin Glover</actor>
+        <actor codigo="366585" nacionalidad="estadounidense">Lea Thompson</actor>
+        <actor codigo="257747" nacionalidad="estadounidense">Thomas F. Wilson</actor>
+      </actores>
+    </pelicula>
+    <pelicula id="3">
+      <titulo>La historia interminable</titulo>
+      <duracion>02:05:29</duracion>
+      <anio_estreno>1981</anio_estreno>
+      <directores>
+        <director codigo="259898" nacionalidad="dnacionalidad1">Director 1</director>
+        <director codigo="258847" nacionalidad="dnacionalidad2">Director 2</director>
+        <director codigo="258878" nacionalidad="dnacionalidad3">Director 3</director>
+      </directores>
+      <productores>
+        <productor codigo="958878" nacionalidad="pnacionalidad1">Productor 1</productor>
+        <productor codigo="985587" nacionalidad="pnacionalidad2">Productor 2</productor>
+        <productor codigo="958787" nacionalidad="pnacionalidad3">Productor 3</productor>
+      </productores>
+      <actores>
+        <actor codigo="365885" nacionalidad="anacionalidad1">Actor 1</actor>
+        <actor codigo="148847" nacionalidad="anacionalidad2">Actor 2</actor>
+        <actor codigo="958878" nacionalidad="anacionalidad3">Actor 3</actor>
+      </actores>
+    </pelicula>
+  </peliculas>
+</biblioteca>

@@ -1,0 +1,28 @@
+
+
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-color: #CCCCCC;
+  margin-bottom: 70px; /* Margin bottom by footer height */
+}
+
+caption {
+  caption-side: top;
+}
+
+body > div > div.panel-heading.pb-2.pt-2 > div > h1 { text-align: center; }
+
+
+/*Estilos listado discos*/
+
+body > div > div.panel-body > div > div.listado-discos > h2 {
+  margin-top: 40px;
+  border-top: 2px solid #dee2e6;
+  border-bottom: 2px solid #dee2e6;
+}
+
+body > div > div.panel-body > div > div.listado-discos > ul.canciones > li { list-style: none; margin-top: 15px; }
+body > div > div.panel-body > div > div.listado-discos > ul.canciones > li > h3 { border-bottom: 2px solid #dee2e6;  }
